@@ -74,7 +74,10 @@
         },
 	"patches-file": "composer.patches.json",
         "preserve-paths": [
-            "public/sites"
+            "public/sites/all/modules/contrib",
+            "public/sites/all/themes/ubc_clf",
+            "public/sites/all/libraries",
+            "public/sites/default"
         ]
     }
 }
