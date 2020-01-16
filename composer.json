@@ -30,6 +30,7 @@
         "drupal/composer_autoloader": "^1.0",
         "drupal/drupal": "^7.62",
         "drush/drush": "^8.0",
+        "drupal/adminimal_theme": "^1.26",
         "symfony/filesystem": "~2.7|^3",
         "webflo/drupal-finder": "^1.0.0"
     },
@@ -68,15 +69,12 @@
             "public/": ["type:drupal-core"],
             "public/profiles/{$name}/": ["type:drupal-profile"],
             "public/sites/all/drush/{$name}/": ["type:drupal-drush"],
-            "public/sites/all/libraries/{$name}/": ["type:drupal-library"],
-            "public/sites/all/modules/contrib/{$name}/": ["type:drupal-module"]
+            "public/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
         },
 	"patches-file": "composer.patches.json",
         "preserve-paths": [
-            "public/sites/all/modules/contrib",
-            "public/sites/all/themes/ubc_clf",
-            "public/sites/all/libraries",
-            "public/sites/default"
+            "public/sites/all/drush",
+            "public/sites"
         ]
     }
 }
