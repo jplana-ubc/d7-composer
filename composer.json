@@ -70,6 +70,7 @@
             "public/profiles/{$name}/": ["type:drupal-profile"],
             "public/sites/all/drush/{$name}/": ["type:drupal-drush"],
             "public/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
+            "public/sites/all/themes/{$name}/": ["drupal/adminimal_theme"]
         },
 	"patches-file": "composer.patches.json",
         "preserve-paths": [
